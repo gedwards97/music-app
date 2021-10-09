@@ -1,7 +1,8 @@
 # All urls local to api app
 from django.urls import path
-from .views import RoomView
+from .views import RoomView, CreateRoomView
 
 urlpatterns = [
-    path('room', RoomView.as_view())
+    path('room', RoomView.as_view()),
+    path('create-room', CreateRoomView.as_view())
 ]
